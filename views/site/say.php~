@@ -1,0 +1,6 @@
+<?php
+use yii\helpers\Html;
+?>
+<p> dit is de hwello wordld applicatie<br></p?>
+
+<?= Html::encode($message) ?>
