@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\VisitorSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 // hier wordt nederlands gezet
-Yii::$app->language = 'NL';
+Yii::$app->language = 'nl_NL';
 
 $this->title = Yii::t('app', 'Visitors');
 $this->params['breadcrumbs'][] = $this->title;

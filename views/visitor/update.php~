@@ -4,8 +4,6 @@ use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Visitor */
-// hier wordt nederlands gezet
-Yii::$app->language = 'nl_NL';
 
 $this->title = Yii::t('app', 'Update Visitor: {nameAttribute}', [
     'nameAttribute' => $model->naam,

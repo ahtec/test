@@ -12,9 +12,6 @@ use yii\filters\VerbFilter;
 /**
  * VisitorController implements the CRUD actions for Visitor model.
  */
- // hier wordt nederlands gezet
-Yii::$app->language = 'nl_NL';
- 
 class VisitorController extends Controller
 {
     /**
