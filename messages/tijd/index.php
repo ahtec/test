@@ -1,8 +1,8 @@
 <?php
 
 return [
-'Create Visitor' => 'Voeg bezoeker toe',
+'Create Visitor' => 'iVoeg bezoeker toe',
 'Create' => 'Maak',
 'Visitors' => 'Bezoekers',
-'item' => 'artikel'
+'item' => 'klacht'
 ];

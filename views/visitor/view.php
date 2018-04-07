@@ -5,8 +5,8 @@ use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Visitor */
-// hier wordt nederlands gezet
-Yii::$app->language = 'nl_NL';
+// hier wordt nederlands gezet  gerard doets
+// Yii::$app->language = 'nl_NL';
 
 $this->title = $model->naam;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Visitors'), 'url' => ['index']];
