@@ -1,8 +1,0 @@
-#!/bin/bash
-cd config ; grep $1 *  
-cd ../messages ; grep -r $1 
-cd ../controllers ; grep $1 *
-cd ../views ; grep $1 *
-cd ../models ; grep $1 *
-cd ..
-
