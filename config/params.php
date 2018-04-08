@@ -1,5 +1,5 @@
 <?php
-// uitgebreid door gerard deoets
+// uitgebreid door gerard doets
 return [
     'adminEmail' => 'admin@example.com',
     'talen' => [
