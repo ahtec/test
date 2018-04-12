@@ -37,8 +37,9 @@ $session->set('lang',$TAAL);  // schrijf gekozen taal naar session
 ?>
 <div class="visitor-index">
 <?php 
-echo 'taal = ';  
-echo \Yii::$app->language ;   // even voor de zekerheid
+echo 'taal = ';
+
+echo \Yii::$app->language ;
 ?>
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>

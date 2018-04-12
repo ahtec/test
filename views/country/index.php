@@ -9,9 +9,13 @@ use yii\grid\GridView;
 
 $this->title = 'Countries';
 $this->params['breadcrumbs'][] = $this->title;
+    \Yii::$app->language =  'de';
 ?>
 <div class="country-index">
-
+<?php 
+echo 'taal = ';
+echo \Yii::$app->language ;
+?>
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 

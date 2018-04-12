@@ -5,7 +5,7 @@ return [
 'Create' => 'erstallen',
 'Visitors' => 'Besuchers',
 'Visitor' => 'Besucher',
-'Bezoekers' => 'Besucher',
+'Bezoeker' => 'Besucher',
 'item' => 'Artikel',
 'Save' => 'sparen' ,
 'Update Visitor: ' => 'Actualiseren den Besucher: ',

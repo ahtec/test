@@ -1,0 +1,54 @@
+
+De opdracht is het bouwen van een website in Yii2 framework.
+
+Hoeft niet te uitgebreid, als je maar bij je eigen code in commentaar zet wat je doet.
+
+Als de volgende functies erin verwerkt zitten zou mooi zijn:
+
+- navigatie volgens de opbouw dat Yii voorschrijft
+
+- database verbinding en een model waar je deze uitleest
+
+- contactformulier d.m.v. een model zoals Yii voorschrijft
+
+- Meertalig, mag heel simpel, zolang het maar volgens Yii gaat
+
+
+
+Ik heb een visitors website gemaakt, visitors kunnen er een opmerking registreren, 
+de inhoud van mijn tabel staat in de yii2basic.sql  en kan in de acceptatie database worden ingelezen
+
+Ik heb de basic/views/layouts/main.php een lnk toegevoegd voor de visitors website
+
+            ['label' => 'Visitor', 'url' => ['/visitor']],   // gerard doets mijn link naar de visitor registratie form
+            
+            
+Maar ook te starten met http://localhost:8080/index.php?r=visitor
+
+
+Je kunt de taal wijzigen door op lnk te klikken;
+dan wordt de taal als sessie variabele gezet 
+
+de create  en update lezen deze en zetten dan de 	Yii::$app->language 
+
+// ***********  start gerard doets *****************
+use yii\web\Session;
+$session = new Session();
+if ($session->has('lang')) {
+ 	Yii::$app->language =  $session ->get('lang');
+ }
+ 
+ // *************************************************
+
+
+vertalingen staan in de messages folder  "nl_NL" nederlands en "de"  duits
+
+in het model Visitor.php heb ik de namen van de kolommen een andere waarde gegeven, die was beter vertaalbaar
+Had ik natuurkijk bij het crearen van het model/ database moeten doen , maar ja, volgende keer beter
+
+
+
+
+Groeten Gerard Doets 
+
+

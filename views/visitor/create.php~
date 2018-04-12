@@ -4,9 +4,8 @@ use yii\helpers\Html;
 // ***********  start gerard doets *****************
 use yii\web\Session;
 $session = new Session();
-if ($session->has('lang')) {
- 	Yii::$app->language =  $session ->get('lang');
- }
+
+ Yii::$app->language =  $session ->get('lang');
  
  // *************************************************
 /* @var $this yii\web\View */

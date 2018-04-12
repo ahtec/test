@@ -9,14 +9,11 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
-/**
- * VisitorController implements the CRUD actions for Visitor model.
- */
- // hier wordt nederlands gezet
+
+ // hier wordt nederlands gezet , nee toch niet
 //Yii::$app->language = 'zh-CN';
 //Yii::$app->language = 'en-US';
 //Yii::$app->language = 'nl-NL';
-Yii::$app->language = 'nl_NL';
  
 class VisitorController extends Controller
 {
@@ -50,12 +47,7 @@ class VisitorController extends Controller
         ]);
     }
 
-    /**
-     * Displays a single Visitor model.
-     * @param string $id
-     * @return mixed
-     * @throws NotFoundHttpException if the model cannot be found
-     */
+  
     public function actionView($id)
     {
         return $this->render('view', [

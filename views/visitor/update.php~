@@ -2,14 +2,11 @@
 
 use yii\helpers\Html;
 
-// ***********  start gerard doets *****************
-use yii\web\Session;
-$session = new Session();
-if ($session->has('lang')) {
- 	Yii::$app->language =  $session ->get('lang');
- }
- 
- // *************************************************
+/* @var $this yii\web\View */
+/* @var $model app\models\Visitor */
+// hier wordt nederlands gezet  gerard doets
+// even niet Yii::$app->language = 'nl_NL';
+
 
 $this->title = Yii::t('app', 'Update Visitor: {nameAttribute}', [
     'nameAttribute' => $model->naam

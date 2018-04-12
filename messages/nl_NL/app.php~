@@ -16,5 +16,5 @@ return [
 'Name' => 'Naam',
 'Address' => 'Adres',
 'City' => 'Plaats',
-'Complain' => 'Klacht'
+
 ];

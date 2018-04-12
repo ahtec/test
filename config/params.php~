@@ -1,6 +1,5 @@
 <?php
-// uitgebreid door gerard doets in een poging om het veranderen van taal dynamisch te maken
-
+// uitgebreid door gerard doets
 return [
     'adminEmail' => 'admin@example.com',
     'talen' => [

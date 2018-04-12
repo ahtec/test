@@ -30,7 +30,7 @@ class Visitor extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
-    // hier  labels aangepast naar engels ivm de vertaling  , gerard doets
+    // hier wat labels aangepast, gerard doets
     public function attributeLabels()
     {
         return [

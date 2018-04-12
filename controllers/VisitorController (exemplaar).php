@@ -8,12 +8,16 @@ use app\models\VisitorSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
-
- // hier wordt nederlands gezet , nee toch niet
+/**
+ * VisitorController implements the CRUD actions for Visitor model.
+ */
+ // hier wordt nederlands gezet  nee toch niet
 //Yii::$app->language = 'zh-CN';
 //Yii::$app->language = 'en-US';
 //Yii::$app->language = 'nl-NL';
+//Yii::$app->language = 'nl_NL';
  
 class VisitorController extends Controller
 {
@@ -23,13 +27,30 @@ class VisitorController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                	[
+                    'actions' => ['language'],
+                    'allow' => 'true',
+                    ],
+                [ 
+                    'actions' => ['logout', 'index','set-cookie','show-cookie'],
+                    'allow' => 'true',
+                    'roles' => ['@'],
+                    ],
+                    ],
+                    ],
+                
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
+                    'language' => ['POST'],
                 ],
             ],
         ];
+        
     }
 
     /**
@@ -47,6 +68,24 @@ class VisitorController extends Controller
         ]);
     }
 
+    
+
+    public function actionLanguage()
+    {
+    	if(isset($_POST['lang'])){
+    		Yii::$app->language = $_POST['lang'];
+    		$cookie = new yii\web\Cookie([
+            'name' => 'lang',
+            'value' => $_POST['lang']
+         ]);
+			Yii::$app->getResponse()->getCookies()->add($cookie);
+    	
+    	}
+    }
+    
+     
+    
+    
     /**
      * Displays a single Visitor model.
      * @param string $id
